@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMR-Shield-Initiatives</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <style>
+    .btn-gradient {
+      @apply bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold py-2 px-5 rounded-lg transition-transform hover:scale-105 hover:shadow-lg;
+    }
+
+    .card-hover {
+      @apply transition-transform hover:-translate-y-2 hover:shadow-xl;
+    }
+  </style>
+</head>
+
+<body class="font-sans text-slate-900">
+  <!-- Header / Navbar -->
+  <header class="fixed w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center space-x-3">
+        <img src="AMRSIlogo.jpeg" class="h-10 w-10 border rounded-xl">
+        <span class="font-bold text-xl">AMRSI</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 items-center">
+        <a href="#home" class="hover:text-cyan-500 transition">Home</a>
+        <a href="#about" class="hover:text-cyan-500 transition">AMR Summary</a>
+        <a href="#programs" class="hover:text-cyan-500 transition">Programs</a>
+        <a href="#contact" class="hover:text-cyan-500 transition">Contact</a>
+        <a href="#contact" class="text-cyan-500 transition border border-cyan-500 hover:bg-cyan-500 hover:text-white rounded-lg px-3"> Stay Connected</a>
+      </nav>
+    </div>
+  </header>
+
+ <!-- Hero Section (Two columns remains the same) -->
+<section id="home" class="relative py-32 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 md:flex md:items-center md:justify-between gap-12">
+    <div class="md:w-1/2" data-aos="fade-right">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Fighting <span class="text-cyan-400">Antimicrobial</span> Resistance</h1>
+      <p class="text-lg md:text-xl mb-6">Helping Tanzania Combat Antimicrobial resistance</p>
+      <div class="flex gap-4">
+        <button class="btn-gradient">Support Our Mission</button>
+        <a href="https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance" class="text-cyan-500 transition border border-cyan-500 hover:bg-cyan-500 hover:text-white rounded-lg px-3"> Learn About AMR</a>
+      </div>
+    </div>
+    <div class="md:w-1/2 mt-8 md:mt-0" data-aos="fade-left">
+      <img src="HEROPlate.jpg" class="w-full rounded-xl shadow-lg">
+    </div>
+  </div>
+</section>
+
+<!-- Problem / AMR Summary Section (Background image with margins) -->
+<section id="about" class="relative bg-[url('problem-statement.jpg')] bg-cover bg-center bg-no-repeat py-24 my-16">
+  <!-- Overlay for readability -->
+  <div class="absolute inset-0 bg-black/40"></div>
+  <div class="relative max-w-4xl mx-auto px-6 text-center text-white" data-aos="fade-up">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">AMR Summary</h2>
+    <p class="mb-4 text-lg md:text-xl">Antimicrobial resistance (AMR) occurs when bacteria, fungi, unicellular and multicellular organisms fail to respond to medicines, making infections harder to treat.</p>
+    <p class="mb-4 text-lg md:text-xl">AMR is one of the top 10 global public health threats facing humanity. It can affect anyone, of any age, in any country. Without effective antimicrobials, modern medicine is at risk.</p>
+    <p class="text-lg md:text-xl">Our organization works tirelessly through research, education, policy advocacy, and community engagement to preserve these life-saving medicines for future generations.</p>
+  </div>
+</section>
+
+
+  <!-- Mission / Vision / Values -->
+  <section class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="text-center p-6 bg-linear-to-r from-blue-500 to-white-200 rounded-xl shadow-md card-hover" data-aos="fade-up">
+      <img src="target.png" class="mx-auto mb-4 h-20 w-20">
+      <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+      <p>Fight AMR through innovative research, education, and nationwide collaboration to protect public health.</p>
+    </div>
+    <div class="text-center p-6 bg-white rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="100">
+      <img src="vision.png" class="mx-auto mb-4 h-20 w-20">
+      <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+      <p>A nation where antimicrobial resistance is no longer a threat, ensuring sustainable healthcare for future generations.</p>
+    </div>
+    <div class="text-center p-6 bg-white rounded-xl shadow-md card-hover" data-aos="fade-up" data-aos-delay="200">
+      <img src="values.png" class="mx-auto mb-4 h-20 w-20">
+      <h3 class="text-xl font-semibold mb-2">Our Values</h3>
+      <p>Scientific excellence, transparency, accountability, and unwavering commitment to improving public health.</p>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold text-center text-cyan-500 underline mb-12" data-aos="fade-up">Our Programs</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-aos="fade-up">
+        <img src="research.png" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Research & Development</h3>
+          <p>Advancing scientific understanding of antimicrobial resistance through cutting-edge research and innovation</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+        <img src="education.jpg" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Education & Training</h3>
+          <p>Building capacity and awareness among heatlhcare proffesionals and communities worldwide</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+        <img src="stewardship.jpg" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Stewardship Programs</h3>
+          <p>Implementing antimicrobial stewardship to optimize antimicrobial medicines</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-slate-900 text-slate-200 py-16">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div data-aos="fade-up">
+        <h3 class="font-semibold text-lg mb-4">AMRShield Initiatives</h3>
+        <p>Dedicated towards a drug-resistant free future</p>
+        <a href="#" class="block hover:text-cyan-400 mt-2">Location: Katavi RRH, Katavi, Tanzania</a>
+        <a href="#" class="block hover:text-cyan-400 mt-2">Email: info@amrsi.co.tz </a>
+        <a href="https://www.instagram.com/amrshield_initiatives?igsh=ZWVkaTlzc3Rndm81" class="block hover:text-cyan-400 mt-2">Instagram: @amrshield_initiatives</a>
+        <a href="#" class="block hover:text-cyan-400 mt-2">Phone: +255 626 497541</a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+        <a href="#about" class="block hover:text-cyan-400 mt-2">About Us</a>
+        <a href="#programs" class="block hover:text-cyan-400 mt-2">Programs</a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h3 class="font-semibold text-lg mb-4">Resources</h3>
+        <a href="#" class="block hover:text-cyan-400 mt-2">WHO Stewardship Policies</a>
+        <a href="#" class="block hover:text-cyan-400 mt-2">AMR Guidelines</a>
+        <a href="#" class="block hover:text-cyan-400 mt-2">AMR Trends</a>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="font-semibold text-lg mb-4">Stay Connected</h3>
+        <form>
+          <input type="email" placeholder="Your email" class="w-full px-3 py-2 rounded-lg text-slate-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+          <button type="submit" class="mt-2 btn-gradient w-full">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init({
+      once: false,
+      duration: 1000,
+      easing: 'ease-out'
+    });
+  </script>
+</body>
+
+</html>
